@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@700&family=Poppins:wght@500&family=Raleway:wght@500&family=Work+Sans:wght@400;500&display=swap"
         rel="stylesheet">
+
+        
 </head>
 
 <body>
 
     <!-- =========== Header ============ -->
 
-    <head class="header">
+    <header class="header open">
         <div class="container">
             <div class="nav">
                 <button class="icon-btn">
@@ -54,8 +57,13 @@
                     Sign in
                 </button>
             </div>
+            <div>
+                <button class="mobail-btn" id="mobail">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
-    </head>
+    </header>
 
     <!-- ========== Main =========== -->
 
@@ -260,7 +268,7 @@
                     </div>
                 </div>
 
-                <!--  -->
+                <!-- block-plants  -->
 
                 <div class="block-plants">
                     <h1>
@@ -270,59 +278,82 @@
                         <p>
                             <select name="Plants" id="4">
                                 <option selected value="">Cheaper First</option>
-                                <option value="1">Kaktus Plants</option>
-                                <option value="2">Landak Plants</option>
-                                <option value="3">Kecubung Plants</option>
+                                <option value="1">Expensive first</option>
+                                <option value="2">New first</option>
+                                <option value="3">Popular first</option>
                             </select>
                         </p>
                     </form>
                 </div>
                 <div class="plant-price">
                     <div class="plant-wrapper">
-                        <div class="plant-inner">
-                            <a href="#"><img src="./assets/Mask Group.png" alt=""></a>
-                            <p>
-                                Kaktus Plants
-                            </p>
-                            <h1>
-                                IDR 85.000
-                            </h1>
-                        </div>
-                        <div class="plant-inner">
-                            <a href="#"><img src="./assets/Mask Group (1).png" alt=""></a>
-                            <p>
-                                Kaktus Plants
-                            </p>
-                            <h1>
-                                IDR 105.000
-                            </h1>
-                        </div>
-                        <div class="plant-inner">
-                            <a href="#"><img src="./assets/Mask Group (2).png" alt=""></a>
-                            <p>
-                                Kaktus Plants
-                            </p>
-                            <h1>
-                                IDR 85.000
-                            </h1>
-                        </div>
-                        <div class="plant-inner">
-                            <a href="#"><img src="./assets/Mask Group (3).png" alt=""></a>
-                            <p>
-                                Kaktus Plants
-                            </p>
-                            <h1>
-                                IDR 85.000
-                            </h1>
-                        </div>
-                        <div class="plant-inner">
-                            <a href="#"><img src="./assets/Mask Group (4).png" alt=""></a>
-                            <p>
-                                Kaktus Plants
-                            </p>
-                            <h1>
-                                IDR 85.000
-                            </h1>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="box">
+                                    <div class="plant-inner">
+                                        <a href="#"><img src="./assets/Mask Group.png" alt=""></a>
+                                        <p>
+                                            Kaktus Plants
+                                        </p>
+                                        <h1>
+                                            IDR 85.000
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="box">
+                                    <div class="plant-inner">
+
+                                        <a href="#"><img src="./assets/Mask Group (1).png" alt=""></a>
+                                        <p>
+                                            Kaktus Plants
+                                        </p>
+                                        <h1>
+                                            IDR 105.000
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="box">
+                                    <div class="plant-inner">
+                                        <a href="#"><img src="./assets/Mask Group (2).png" alt=""></a>
+                                        <p>
+                                            Kaktus Plants
+                                        </p>
+                                        <h1>
+                                            IDR 85.000
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="box">
+                                    <div class="plant-inner">
+                                        <a href="#"><img src="./assets/Mask Group (3).png" alt=""></a>
+                                        <p>
+                                            Kaktus Plants
+                                        </p>
+                                        <h1>
+                                            IDR 85.000
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="box">
+                                    <div class="plant-inner">
+                                        <a href="#"><img src="./assets/Mask Group (4).png" alt=""></a>
+                                        <p>
+                                            Kaktus Plants
+                                        </p>
+                                        <h1>
+                                            IDR 85.000
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -343,7 +374,7 @@
                                     dignissim. Maecenas vitae eros sapien. Quisque pellentesque tempus dignissim.
                                 </p>
                             </div>
-                            <img src="./assets/liana-mikah-8tJxjQWTyNA-unsplash 1.png" width="100%" alt="">
+                            <img src="./assets/liana-mikah-8tJxjQWTyNA-unsplash 1.png" alt="">
                         </div>
                     </div>
                     <div class="col-6">
@@ -428,6 +459,8 @@
         </div>
 
     </footer>
+
+    <script src="./script/script.js"></script>
 </body>
 
 </html>

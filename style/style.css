@@ -32,6 +32,11 @@ body {
     height: 100%;
 }
 
+.col-2 {
+    width: 20%;
+    padding: 15px;
+}
+
 .col-3 {
     width: 25%;
     padding: 15px;
@@ -50,9 +55,11 @@ body {
 
 /* ========== Header ========== */
 
-.nav {
+.header {
     padding: 40px 0;
+}
 
+.nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -88,6 +95,33 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 700;
+}
+
+.mobail-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    width: 40px;
+    height: 40px;   
+}
+
+.mobail-btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    left: 5px;
+    
+    transition: transform .0s, opasity .0s;
+}
+
+.mobail-btn span:nth-child(1) {
+    transform: translateY(10px);
+}
+
+.mobail-btn span:nth-child(2) {
+    transform: translateY(-10px);
 }
 
 /* ========== secton hero =============== */
@@ -132,6 +166,8 @@ body {
 
 .hero-action img {
     margin-top: -470px;
+    width: 100%;
+    max-width: 608px;
 }
 
 .large-btn {
@@ -255,8 +291,8 @@ select {
     text-align: center;
 }
 
-.plant-inner img:hover {
-    transform: scale(1.1);
+.plant-inner img {
+    width: 100%;
 }
 
 .plant-inner p {
@@ -298,6 +334,10 @@ select {
     font-weight: 400;
     line-height: 28px;
     color: #2C1500;
+}
+
+.title img {
+    width: 100%;
 }
 
 .title-box {
